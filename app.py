@@ -5,10 +5,10 @@ from mysql.connector import Error
 app = Flask(__name__)
 
 db_config = {
-    'host': 'localhost',
-    'user': 'root',  
-    'password': 'DBMS',  
-    'database': 'Student_Information_System'
+    'host': '',
+    'user': '',  
+    'password': '',  
+    'database': ''
 }
 
 def get_db_connection():
@@ -330,4 +330,5 @@ def remove_result(result_id):
     return redirect(url_for('results_page'))
 
 if __name__ == '__main__':
+
     app.run(debug=True)
